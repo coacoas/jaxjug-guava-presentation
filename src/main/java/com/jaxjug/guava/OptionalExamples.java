@@ -44,4 +44,22 @@ public class OptionalExamples {
 		@SuppressWarnings("unused")
 		String eyal = Optional.fromNullable(map.get("Eyal")).or("Not Found").toUpperCase();
 	}
+
+	static class Person { 
+		final String firstName;
+		final String lastName;
+		final Optional<String> email;
+
+		public Person(String first, String last) {
+			firstName = first;
+			lastName = last;
+			email = Optional.absent();
+		}
+
+		public Person(String first, String last, String email) {
+			firstName = first;
+			lastName = last;
+			this.email = Optional.of(email);
+		}
+	}
 }

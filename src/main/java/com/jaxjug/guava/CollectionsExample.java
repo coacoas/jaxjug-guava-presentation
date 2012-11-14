@@ -109,7 +109,10 @@ public class CollectionsExample {
 	}
 	
 	public Iterable<Integer> getAllUppercaseStringLengthsFluent(Iterable<String> src) { 
-		return FluentIterable.from(src).filter(allCaps).transform(stringLengths);
+		return FluentIterable
+			.from(src)
+			.filter(allCaps)
+			.transform(stringLengths);
 	}
 	
 	public static Function<String, String> quote = new Function<String, String>() {
