@@ -27,10 +27,27 @@ body {
   color: #333333;
 }
 
+.reveal .version-description p {
+  font-size: 24px;
+  text-align: left;
+}
+
 ::selection {
   color: white;
   background: #134674;
   text-shadow: none;
+}
+
+.reveal table { 
+  font-size: 24px;
+  padding: 0px;
+  spacing: 0px;
+}
+
+.reveal td { 
+  border: 0px solid #eeeeee;
+  padding: 10px;
+  spacing: 0px;
 }
 
 /*********************************************
