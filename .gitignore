@@ -1,6 +1,12 @@
 .DS_Store
 .svn
+.classpath
+.project
+.settings
 log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.gradle/
+bin/
+build/
